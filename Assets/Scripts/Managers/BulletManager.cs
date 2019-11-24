@@ -15,7 +15,7 @@ public class BulletManager : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetMouseButtonDown(0)) {
             PoolManager.Instance.ReUseObject(_bullet,Vector3.zero, Quaternion.identity);
         }
     }
